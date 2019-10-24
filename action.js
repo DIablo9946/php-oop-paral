@@ -25,7 +25,7 @@ function getData(){
     success : function(data){
       console.log(data);
       console.log("hi");
-      $(".container").append(data);
+      $(".results").append(data);
     },
     error : function(data){
       console.log("errore");

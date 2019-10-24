@@ -28,9 +28,17 @@
     }
   };
 
+  $cubes = [];
+
   $cube1 = new Cube($_GET["base"], $_GET["altezza"], $_GET["larghezza"]);
 
-  echo $cube1 -> getArea();
 
-  echo json_encode($_GET);
+
+  $str1 = "Dimensioni del cubo: " . $_GET["base"] . " " . "base" . " " . $_GET["altezza"] . " " . "altezza" . " " . $_GET["larghezza"] . " " . "larghezza" . "<br>" .
+          "Area del cubo: " . $cube1 -> getArea() . "<br>"
+          . "Volume del cubo: " . $cube1 -> getPer() . "<br>";
+
+  $cubes = [$str1];
+
+  echo json_encode($cubes);
 ?>

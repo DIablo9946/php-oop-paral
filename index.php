@@ -12,6 +12,7 @@
       <input type="text" id="altezza" placeholder="Altezza"></input>
       <input type="text" id="larghezza" placeholder="Larghezza"></input>
       <input type="button" id="go">Go</input>
+      <div class="results"></div>
     </div>
     <script type="text/javascript" src="action.js"></script>
   </body>
